@@ -1,0 +1,191 @@
+/* Amiri Font */
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --poppinsFont: "Poppins", sans-serif; 
+    --amiriFont: "Amiri", serif;
+    --olivegreen: #95A986;
+    --lightgrey: #F6F6F6;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--poppinsFont);
+    font-size: 16px;
+    background-color: white;
+}
+
+/* common elements  */
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+h1 {
+    font-size: 68px;
+    line-height: 1.3;
+    font-family: var(--amiriFont);
+}
+h2 {
+    font-size: 45px;
+    line-height: 1.3;
+    font-family: var(--amiriFont);
+}
+h3 {
+    font-size: 24px;
+    line-height: 1;
+    font-family: var(--amiriFont);
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+}
+/* common class */
+.commonPadding {
+    padding: 110px 0;
+}
+
+/* navbar */
+nav {
+    padding: 20px 40px!important;
+}
+.nav-link {
+    color: white!important;
+}
+.navbar-nav {
+    gap: 20px!important;
+}
+.active {
+    position: relative;
+}
+.active::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: white;
+    bottom: -4px;
+    right: 28px;
+}
+/* banner */
+.banner {
+    background-image: url('../images/banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.customBtn {
+    letter-spacing: 4.32px;
+    background-color: var(--olivegreen);
+    border-radius: 50px;
+    padding: 25px 30px;
+}
+.banner .customCard {
+    padding: 70px 60px;
+}
+.customCardBody {
+    max-width: 653px;
+    width: 100%;
+}
+
+/* about */
+.greenPara {
+    color: var(--olivegreen);
+    letter-spacing: 3.2px;
+}
+
+
+/* offer */
+.offer {
+    padding-bottom: 130px;
+}
+.offerHeading {
+    margin-bottom: 32px;
+}
+
+/* mission */
+.mission {
+    background-color: var(--lightgrey);
+    padding: 100px 0;
+}
+.left {
+    display: flex;
+    align-items: center;
+}
+
+/* footer */
+.footTop {
+    padding: 60px 0;
+    border-bottom: 1px solid #868686;
+}
+.footHead {
+    position: relative;
+    padding-bottom: 15px;
+}
+.footHead::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background-color: black;
+    bottom: -4px;
+    left: 0;
+}
+#mail {
+    display: block;
+    width: 100%;
+    border-radius: 30px;
+    outline: none;
+    background: none;
+    padding: 15px 8px;
+    border: 1px solid #868686;
+    margin-bottom: 20px;
+}
+#submit {
+    display: inline-block;
+    background-color: var(--olivegreen);
+    border: none;
+    outline: none;
+    padding: 10px 32px;
+    color: black;
+    border-radius: 30px;
+}
+.links a {
+    color: black;
+    line-height: 2.5;
+}
+.footBottom {
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+
+@media screen and (max-width: 765px) {
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .navbar-brand img {
+        max-width: 150px;
+        width: 100%;
+    }
+    .banner .customCard {
+        padding: 30px 20px;
+    }
+}
